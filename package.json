@@ -1,7 +1,7 @@
 {
   "name": "centers-kfc",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "eventSource.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DiegoMGar/centers-KFC.git"
@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/DiegoMGar/centers-KFC#readme",
   "scripts": {
-    "start": "node main.js",
+    "start": "node eventSource.js",
     "pretty": "pretty-quick",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,6 +23,8 @@
     "pretty-quick": "^2.0.1"
   },
   "dependencies": {
-    "kafka-node": "^5.0.0"
+    "eventsource": "^1.0.7",
+    "kafka-node": "^5.0.0",
+    "uuid": "^3.4.0"
   }
 }
